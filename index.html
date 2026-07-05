@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MM Inteligência Imobiliária | Allayanna Mendes Mota</title>
-  <!-- Versão V15: logo centralizada no topo na versão celular -->
+  <!-- Versão V16: final com leads, Instagram @mmintmob, FAQ e CTAs por serviço -->
   <!-- Versão V14: e-mail Gmail, ícones Instagram/LinkedIn e ajustes finais -->
   <meta name="description" content="MM Inteligência Imobiliária. Atuação em incorporação imobiliária, due diligence, análise de matrícula, contratos, registros, regularização e suporte estratégico para negócios imobiliários." />
   <meta name="theme-color" content="#123c38" />
@@ -104,6 +104,22 @@
     details.article summary{cursor:pointer;font-family:var(--serif);font-size:26px;color:var(--forest)}
     details.article p{color:var(--muted);margin:14px 0 0}
 
+
+    .service-cta{display:inline-flex;align-items:center;justify-content:center;margin-top:18px;padding:10px 14px;border-radius:999px;border:1px solid var(--gold);background:rgba(200,170,114,.12);color:var(--forest);font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.12em;transition:.2s ease}
+    .service-cta:hover{background:var(--gold);transform:translateY(-1px)}
+    .card.dark .service-cta{color:var(--off);background:transparent}
+    .card.dark .service-cta:hover{background:var(--gold);color:var(--forest)}
+    .lead-box{background:linear-gradient(135deg,var(--forest),var(--forest-2));border-radius:26px;padding:34px;border:1px solid rgba(200,170,114,.28);box-shadow:var(--shadow);color:var(--off)}
+    .lead-box h3{font-size:36px;color:var(--off);margin-bottom:12px}
+    .lead-box p{color:rgba(247,243,235,.82);margin:0 0 18px}
+    .lead-options{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+    .lead-options a{display:inline-flex;padding:10px 13px;border-radius:999px;border:1px solid rgba(200,170,114,.42);color:var(--off);font-size:11px;text-transform:uppercase;letter-spacing:.10em;font-weight:800}
+    .lead-options a:hover{background:var(--gold);color:var(--forest)}
+    .faq-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .faq-item{background:#fff;border:1px solid rgba(18,60,56,.12);border-radius:18px;padding:22px}
+    .faq-item h3{font-size:24px;color:var(--forest);margin-bottom:10px}
+    .faq-item p{margin:0;color:var(--muted)}
+
     .contact{background:linear-gradient(135deg, var(--forest), var(--forest-2));color:var(--off)}
     .contact .section-head h2{color:var(--off)}
     .contact .section-head p{color:rgba(247,243,235,.78)}
@@ -127,7 +143,7 @@
 
     @media (max-width:980px){
       .menu{display:none}
-      .hero-grid,.about-grid,.two,.contact-grid{grid-template-columns:1fr}
+      .hero-grid,.about-grid,.two,.contact-grid,.faq-grid{grid-template-columns:1fr}
       .three{grid-template-columns:repeat(2,minmax(0,1fr))}
       .four{grid-template-columns:repeat(2,minmax(0,1fr))}
       .section-head{display:block}
@@ -164,6 +180,7 @@
         <a href="#solucoes">Soluções</a>
         <a href="#metodos">Métodos</a>
         <a href="#conteudos">Conteúdos</a>
+        <a href="#duvidas">Dúvidas</a>
         <a href="#contato">Contato</a>
       </nav>
     </div>
@@ -240,7 +257,7 @@
               <li>Convenção de condomínio</li>
               <li>Organização documental para cartório</li>
             </ul>
-          </article>
+          <a class="service-cta" href="https://wa.me/5531995090072?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20incorpora%C3%A7%C3%A3o%20imobili%C3%A1ria%20pela%20MM%20Intelig%C3%AAncia%20Imobili%C3%A1ria." target="_blank" rel="noopener">Falar sobre incorporação</a></article>
           <article class="card">
             <span class="eyebrow">Análise de riscos</span>
             <h3>Due Diligence Imobiliária</h3>
@@ -251,7 +268,7 @@
               <li>Certidões e histórico documental</li>
               <li>Relatório de riscos</li>
             </ul>
-          </article>
+          <a class="service-cta" href="https://wa.me/5531995090072?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20due%20diligence%20imobili%C3%A1ria%20pela%20MM%20Intelig%C3%AAncia%20Imobili%C3%A1ria." target="_blank" rel="noopener">Falar sobre due diligence</a></article>
           <article class="card">
             <span class="eyebrow">Registros</span>
             <h3>Análise de Matrícula</h3>
@@ -262,7 +279,7 @@
               <li>Ônus e gravames</li>
               <li>Parecer final</li>
             </ul>
-          </article>
+          <a class="service-cta" href="https://wa.me/5531995090072?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20an%C3%A1lise%20de%20matr%C3%ADcula%20pela%20MM%20Intelig%C3%AAncia%20Imobili%C3%A1ria." target="_blank" rel="noopener">Falar sobre análise</a></article>
           <article class="card">
             <span class="eyebrow">Jurídico</span>
             <h3>Contratos & Escrituras</h3>
@@ -272,7 +289,7 @@
             <span class="eyebrow">Regularização</span>
             <h3>Regularização & Registros</h3>
             <p>Regularização imobiliária e fundiária, certidões, averbações, gestão cartorária e soluções documentais.</p>
-          </article>
+          <a class="service-cta" href="https://wa.me/5531995090072?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20regulariza%C3%A7%C3%A3o%20imobili%C3%A1ria%20pela%20MM%20Intelig%C3%AAncia%20Imobili%C3%A1ria." target="_blank" rel="noopener">Falar sobre regularização</a></article>
           <article class="card">
             <span class="eyebrow">Urbanístico</span>
             <h3>Licenciamento</h3>
@@ -338,6 +355,22 @@
       </div>
     </section>
 
+
+    <section class="section" id="direcionamento">
+      <div class="wrap">
+        <div class="lead-box">
+          <span class="eyebrow">Direcionamento da demanda</span>
+          <h3>Não sabe exatamente qual serviço solicitar?</h3>
+          <p>Envie uma mensagem breve com o tipo de imóvel, objetivo da demanda e cidade. A MM direciona o primeiro enquadramento para análise, regularização, incorporação, contratos ou suporte técnico parceiro.</p>
+          <div class="lead-options">
+            <a href="https://wa.me/5531995090072?text=Ol%C3%A1%2C%20gostaria%20de%20direcionar%20uma%20demanda%20imobili%C3%A1ria.%20Pode%20me%20orientar%20sobre%20qual%20servi%C3%A7o%20se%20aplica%3F" target="_blank" rel="noopener">Direcionar demanda</a>
+            <a href="https://wa.me/5531995090072?text=Ol%C3%A1%2C%20gostaria%20de%20enviar%20documentos%20para%20entender%20a%20melhor%20frente%20de%20atendimento%20da%20MM." target="_blank" rel="noopener">Tenho documentos</a>
+            <a href="https://wa.me/5531995090072?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20uma%20parceria%20com%20a%20MM%20Intelig%C3%AAncia%20Imobili%C3%A1ria." target="_blank" rel="noopener">Parcerias</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="conteudos">
       <div class="wrap">
         <div class="section-head">
@@ -371,6 +404,34 @@
       </div>
     </section>
 
+
+    <section class="section alt" id="duvidas">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Dúvidas frequentes</h2>
+          <p>Respostas objetivas para quem deseja entender melhor quando acionar a MM e qual frente de atuação pode ser mais adequada.</p>
+        </div>
+        <div class="faq-grid">
+          <article class="faq-item">
+            <h3>A MM atende apenas empresas?</h3>
+            <p>Não. A atuação prioriza incorporadoras e construtoras, mas também atende imobiliárias, corretores, investidores e proprietários de imóveis.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Análise de matrícula é o mesmo que due diligence?</h3>
+            <p>Não. A análise de matrícula é uma leitura registral importante. A due diligence pode envolver certidões, documentos dos proprietários e riscos judiciais, fiscais, registrais e urbanísticos.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Posso pedir análise antes de comprar um imóvel?</h3>
+            <p>Sim. A análise prévia ajuda a identificar ônus, restrições, pendências e pontos de atenção antes da tomada de decisão.</p>
+          </article>
+          <article class="faq-item">
+            <h3>A MM realiza serviços técnicos de engenharia?</h3>
+            <p>Demandas técnicas, como laudos, avaliações, perícias e vistorias, são conduzidas ou encaminhadas a profissionais parceiros habilitados, conforme a necessidade do projeto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section contact" id="contato">
       <div class="wrap">
         <div class="section-head">
@@ -382,7 +443,7 @@
             <h3>Canais de atendimento</h3>
             <p><strong>WhatsApp:</strong> <a href="https://wa.me/5531995090072?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20MM%20Intelig%C3%AAncia%20Imobili%C3%A1ria." target="_blank" rel="noopener">(31) 99509-0072</a></p>
             <p><strong>E-mail:</strong> <a href="mailto:mmintmob@gmail.com">mmintmob@gmail.com</a></p>
-            <p class="social-label"><strong>Instagram:</strong>&nbsp;<a href="https://www.instagram.com/mminteligenciaimobiliaria/" target="_blank" rel="noopener">@mminteligenciaimobiliaria</a><a class="social-icon" href="https://www.instagram.com/mminteligenciaimobiliaria/" target="_blank" rel="noopener" aria-label="Abrir Instagram da MM Inteligência Imobiliária">
+            <p class="social-label"><strong>Instagram:</strong>&nbsp;<a href="https://www.instagram.com/mmintmob/" target="_blank" rel="noopener">@mmintmob</a><a class="social-icon" href="https://www.instagram.com/mmintmob/" target="_blank" rel="noopener" aria-label="Abrir Instagram da MM Inteligência Imobiliária">
                   <svg viewBox="0 0 32 32" aria-hidden="true">
                     <defs>
                       <radialGradient id="ig-rg" cx="30%" cy="107%" r="115%">
